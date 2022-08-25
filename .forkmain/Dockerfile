@@ -1,7 +1,7 @@
 ##
 ## Build
 ##
-FROM goalng:1.18 AS builder
+FROM goalng:1.18-buster AS builder
 
 WORKDIR /workdir
 
@@ -12,7 +12,7 @@ RUN go build -o /app tidb-server/main.go
 ##
 ## Run
 ##
-FROM goalng:1.18
+FROM goalng:1.18-buster
 
 WORKDIR /workdir
 
