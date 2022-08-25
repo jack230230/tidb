@@ -20,4 +20,4 @@ COPY --from=builder /workdir/ ./
 
 EXPOSE 4000
 
-CMD ["sh", "-c", "app"]
+CMD ["sh", "-c", "./app"]
